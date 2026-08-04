@@ -1,10 +1,11 @@
-`<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThreadCo - Wear the Code. Live the Street</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
     table,
@@ -18,85 +19,121 @@
 
 <body>
     <header>
+        <h1>ThreadCo</h1>
+        <!-- <p><em>Wear the Code. Live the Street</em></p> -->
         <nav>
-            <h1>ThreadCo</h1>
-            <p><em>Wear the Code. Live the Street</em></p>
-
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="product.html">Products</a></li>
                 <li><a href="productDetails.html">Product Details</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-                <li><a href="">Cart (0)</a></li>
+                <li><a href="" id="cart">Cart (0)</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <article>
-            <section>
-                <h2>New Drop. Every Friday</h2>
-                <p>ThreadCo is not just clothing - it is a statement. Born on the streets of Delhi, built for every city
-                    in India. <strong>Limited drops. No restocks. Ever.</strong> We make streetwear that hits different
-                    - 100% cotton, oversized fits, and designs that actually mean something.</p>
+            <section id="hero">
+                <div class="left-hero">
+                    <h2>New Drop. <br> <span id="design">Every Friday.</span></h2>
+                    <p>ThreadCo is not just clothing - it is a statement. Born on the streets of Delhi, built for every
+                        city
+                        in India. <strong>Limited drops. No restocks. Ever.</strong><br> We make streetwear that hits
+                        different
+                        - 100% cotton, oversized fits, and designs that actually mean something.</p>
 
-                <p><a href="">Shop Now</a> &nbsp; <a href="">View Lookbook</a></p>
+                    <p>
+                    <div id="cta">
+                        <a href="" id="adesign">Shop Now</a><a href="" id="adesign2">View Lookbook</a>
+                    </div>
+                    </p>
+
+                </div>
+                <div class="right-hero">
+                    <div class="glow orb1"></div>
+                    <div class="glow orb2"></div>
+                    <img src="product 1.jpg" alt="">
+                </div>
+            </section>
         </article>
-        </section>
 
-        <section>
-            <article>
-                <h2>This Week's Drop</h2>
-                <p>Friday 12:00 p.m. Set your alarms. These wont last.</p>
+        <section id="week-drop">
 
-                <!-- Product 1 -->
-                <figure>
-                    <img src="product 1.jpg" alt="" width="300px" height="500px">
-                    <figcaption>Oversized Drop Tee Vol.3</figcaption>
-                </figure>
-                <h3>Oversized Drop Tee Vol.3</h3>
-                <p>Category: T-Shirts</p>
-                <p>Price: <strong>&#8377;799</strong> <s>&#8377;1199</s></p>
-                <p><mark>33% OFF</mark></p>
-                <a href="">View Details</a>
-                <button type="submit">Add to Cart</button>
+            <h2>This Week's Drop</h2>
+            <p>Friday 12:00 p.m. Set your alarms. These wont last.</p>
 
-                <!-- Product 2 -->
-                <figure>
-                    <img src="product 2.jpg" alt="" width="300px" height="500px">
-                    <figcaption>Street Hoddie - Olive</figcaption>
-                </figure>
-                <h3>Street Hoddie - Olive</h3>
-                <p>Category: Hoddies</p>
-                <p>Price: <strong>&#8377;1499</strong> <s>&#8377;1999</s></p>
-                <p><mark>25% OFF</mark></p>
-                <a href="">View Details</a>
-                <button type="submit">Add to Cart</button>
+            <div>
+                <article>
+                    <!-- Product 1 -->
+                    <figure>
+                        <img src="product 1.jpg" alt="" width="300px" height="500px">
+                        <figcaption>Oversized Drop Tee Vol.3</figcaption>
+                    </figure>
+                    <h3>Oversized Drop Tee Vol.3</h3>
+                    <p>Category: T-Shirts</p>
+                    <p>Price: <strong>&#8377;799</strong> <s>&#8377;1199</s></p>
+                    <p><mark>33% OFF</mark></p>
+                    <a href="">View Details</a>
+                    <button type="submit">Add to Cart</button>
+                </article>
 
-                <!-- Product 3 -->
-                <figure>
-                    <img src="product 3.jpg" alt="" width="300px" height="500px">
-                    <figcaption>Utility Cargo - Beige</figcaption>
-                </figure>
-                <h3>Utility Cargo - Beige</h3>
-                <p>Category: Cargo Pants</p>
-                <p>Price: <strong>&#8377;1799</strong> <s>&#8377;2499</s></p>
-                <p><mark>28% OFF</mark></p>
-                <a href="">View Details</a>
-                <button type="submit">Add to Cart</button>
+                <article>
+                    <!-- Product 2 -->
+                    <figure>
+                        <img src="product 2.jpg" alt="" width="300px" height="500px">
+                        <figcaption>Street Hoddie - Olive</figcaption>
+                    </figure>
+                    <h3>Street Hoddie - Olive</h3>
+                    <p>Category: Hoddies</p>
+                    <p>Price: <strong>&#8377;1499</strong> <s>&#8377;1999</s></p>
+                    <p><mark>25% OFF</mark></p>
+                    <a href="">View Details</a>
+                    <button type="submit">Add to Cart</button>
+                </article>
 
-                <!-- Product 4 -->
-                <figure>
-                    <img src="product 4.jpg" alt="" width="400px" height="500px">
-                    <figcaption>TC 6 - Panel Cap</figcaption>
-                </figure>
-                <h3>TC 6 - Panel Cap</h3>
-                <p>Category: Caps</p>
-                <p>Price: <strong>&#8377;499</strong> <s>&#8377;699</s></p>
-                <p><mark>28% OFF</mark></p>
-                <a href="">View Details</a>
-                <button type="submit">Add to Cart</button>
-            </article>
+                <article>
+                    <!-- Product 3 -->
+                    <figure>
+                        <img src="product 3.jpg" alt="" width="300px" height="500px">
+                        <figcaption>Utility Cargo - Beige</figcaption>
+                    </figure>
+                    <h3>Utility Cargo - Beige</h3>
+                    <p>Category: Cargo Pants</p>
+                    <p>Price: <strong>&#8377;1799</strong> <s>&#8377;2499</s></p>
+                    <p><mark>28% OFF</mark></p>
+                    <a href="">View Details</a>
+                    <button type="submit">Add to Cart</button>
+                </article>
+
+                <article>
+                    <!-- Product 4 -->
+                    <figure>
+                        <img src="product 3.jpg" alt="" width="300px" height="500px">
+                        <figcaption>Utility Cargo - Beige</figcaption>
+                    </figure>
+                    <h3>Utility Cargo - Beige</h3>
+                    <p>Category: Cargo Pants</p>
+                    <p>Price: <strong>&#8377;1799</strong> <s>&#8377;2499</s></p>
+                    <p><mark>28% OFF</mark></p>
+                    <a href="">View Details</a>
+                    <button type="submit">Add to Cart</button>
+                </article>
+
+                <article>
+                    <!-- Product 5 -->
+                    <figure>
+                        <img src="product 4.jpg" alt="" width="400px" height="500px">
+                        <figcaption>TC 6 - Panel Cap</figcaption>
+                    </figure>
+                    <h3>TC 6 - Panel Cap</h3>
+                    <p>Category: Caps</p>
+                    <p>Price: <strong>&#8377;499</strong> <s>&#8377;699</s></p>
+                    <p><mark>28% OFF</mark></p>
+                    <a href="">View Details</a>
+                    <button type="submit">Add to Cart</button>
+                </article>
+            </div>
         </section>
 
         <section>
@@ -206,6 +243,7 @@
                 <li><a href="">Privacy Policy</a></li>
                 <li><a href="">Terms & Conditions</a></li>
             </ul>
+
         </nav>
 
         <p><a href="">Instagram</a>&nbsp; |&nbsp; <a href="">Twitter</a>&nbsp; |&nbsp; <a href="">YouTube</a></p>
