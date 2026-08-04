@@ -254,12 +254,13 @@ main {
     width: 400px;
     object-fit: cover;
     border-radius: var(--radius-lg);
-    position: absolute;
+    position: relative;
+    /* z-index: -1; */
 }
 
 .glow {
-    width: 450px;
-    height: 550px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     position: absolute;
     z-index: -1;
@@ -269,13 +270,13 @@ main {
 
 .orb1 {
     background-color: var(--color-primary);
-    top: 10%;
+    top: -25px;
     right: 20%;
 }
 
 .orb2 {
     background-color: var(--color-secondary);
-    bottom: 10%;
+    bottom: -20px;
     left: 20%;
 }
 
