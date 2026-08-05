@@ -412,3 +412,54 @@ article{
     top: 4%;
     left: 67%;
 }
+
+#best-seller h2{
+    padding: 60px 5px 20px;
+    text-transform: uppercase;
+}
+
+#best-seller table{
+    margin-bottom: 5%;
+    width: 100%;
+    color: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border-collapse: collapse;
+    
+}
+
+#best-seller th[colspan="5"]{
+    padding: 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: var(--font-display);
+    letter-spacing: 0.2em;
+    background: var(--gradient-accent);
+    text-align: center;
+}
+
+#best-seller th{
+    padding: 20px 15px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: var(--font-display);
+    background-color: #181920;
+}
+
+#best-seller td{
+    padding: 20px 15px;
+    text-align: left;
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    background-color: #0F1319;
+    border-bottom: solid 1px var(--color-border);
+}
+
+#best-seller tr:hover td{
+    background-color: #181920;
+}
+
+#best-seller tr td:first-of-type:hover{
+    color: var(--color-secondary);
+}
