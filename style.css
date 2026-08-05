@@ -290,7 +290,125 @@ main {
     /* padding-bottom: 10px; */
 }
 
-#week-drop>p {
+#week-drop > p {
     margin: 15px 0;
     font-family: var(--font-body);
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.cards article{
+    flex: 1 1 260px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+}
+
+.cards article:hover{
+    border: 1px solid var(--color-primary-glow);
+    box-shadow: 0 15px 30px var(--color-primary-glow);;
+}
+
+figcaption{
+    display: none;
+}
+
+figure{
+    overflow: hidden;
+    aspect-ratio: 3/4;
+    padding: 10px;
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+}
+
+article{
+    position: relative;
+}
+
+.cards article h3{
+    padding: 5px 10px 0;
+    font-size: 1.3rem;
+}
+
+.cards article p:first-of-type{
+    font-size: 1rem;
+    padding: 0px 10px;
+    font-family: var(--font-body);
+}
+
+.cards article p span{
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.cards article p:nth-of-type(2){
+    font-family: var(--font-body);
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 10px 10px;
+}
+
+.cards article p:nth-of-type(2) strong{
+    font-family: var(--font-display);
+}
+
+
+.cards article p:nth-of-type(2) s{
+    margin-left: 10px;
+}
+
+
+.cards article a{
+    padding: 10px 10px;
+    font-size: 1.3rem;
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.cards article a:hover{
+    color: var(--color-secondary);
+}
+
+.cards article button{
+    padding: 13px 13px 13px 13px;
+    font-size: 1.3rem;
+    font-weight: 770;
+    border-radius: var(--radius-md);
+    background: rgba(231, 225, 225, 0.831);
+}
+
+.cards article button:hover{
+    background-color: var(--color-primary);
+    text-shadow: 0 5px 10px var(--white);
+    cursor: pointer;
+    
+}
+
+.cards article p:nth-of-type(3) mark{
+    background: var(--gradient-accent);
+    border-radius: var(--radius-lg);
+    padding: 7px 15px;
+    color: var(--color-text-body);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: var(--font-body);
+    position: absolute;
+    top: 4%;
+    left: 67%;
 }
