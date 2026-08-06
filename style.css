@@ -574,6 +574,8 @@ article{
 #notify input{
     padding: 15px 200px 15px 15px;
     background: var(--color-surface-muted);
+    color: var(--white);
+    font-family: var(--font-body);
     font-size: 1.2rem;
     border: solid 1px var(--color-border);
     border-top-left-radius: var(--radius-md);
@@ -602,4 +604,62 @@ article{
 .end-section small{
     font-family: var(--font-body);
     font-size: 1.2rem;
+}
+
+.footer{
+    background: var(--color-bg-footer);
+    padding: 80px 80px;
+}
+.footer p:first-child{
+    font-size: 2.2rem;
+    font-family: var(--font-body);
+    background: var(--gradient-accent);
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    margin-bottom: 25px;
+}
+
+.footer p:nth-child(2){
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.footer nav ul{
+    display: flex;
+    gap: 15px;
+    text-transform: uppercase;
+    font-family: var(--font-body);
+}
+
+.footer nav ul li{
+    border: solid 1px var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.footer nav ul li:hover{
+    border: 1px solid var(--white);
+    background: rgba(78, 71, 71, 0.292);
+}
+
+.footer nav ul li a{
+    color: var(--color-text-muted);
+    font-weight: 500;
+}
+
+.footer p:last-child{
+    color: var(--color-accent);
+    font-size: 1.2rem;
+    font-family: var(--font-body);
+}
+
+.footer p:last-child a{
+    color: var(--color-accent);
+    font-size: 1.2rem;
+    font-family: var(--font-body);
 }
