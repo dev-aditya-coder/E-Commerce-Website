@@ -416,6 +416,7 @@ article{
 #best-seller h2{
     padding: 60px 5px 20px;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 #best-seller table{
