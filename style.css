@@ -230,54 +230,87 @@ main {
     border: 3px solid rgba(66, 64, 64, 0.926);
 }
 
+@keyframes button-motion {
+    0% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
 #adesign:hover {
     background-color: var(--color-primary);
     box-shadow: 0 15px 30px var(--color-primary-glow);
     text-shadow: 0 2px 10px var(--white);
+    animation: button-motion 1s;
 }
 
 #adesign2:hover {
     border: 3px solid var(--white);
     background: rgba(71, 63, 63, 0.646);
+    animation: button-motion 1s;
 }
 
 .right-hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 300px;
+    margin-right: 100px;
     position: relative;
 }
 
 .right-hero img {
-    height: 600px;
-    width: 400px;
+    height: 500px;
+    width: 350px;
     object-fit: cover;
     border-radius: var(--radius-lg);
-    position: relative;
-    /* z-index: -1; */
+    transition-duration: 6s;
+    animation: updown 1s infinite alternate;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-30px);
+    }
 }
 
 .glow {
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 400px;
     border-radius: 50%;
     position: absolute;
     z-index: -1;
     filter: blur(50px);
-    opacity: .7;
+}
+
+@keyframes orb-glow {
+    0% {
+        opacity: .7;
+    }
+
+    100% {
+        opacity: .3;
+    }
 }
 
 .orb1 {
     background-color: var(--color-primary);
-    top: -25px;
-    right: 20%;
+    top: -55px;
+    right: 35%;
+    animation: orb-glow 1s infinite 3s alternate;
 }
 
 .orb2 {
     background-color: var(--color-secondary);
-    bottom: -20px;
-    left: 20%;
+    bottom: -55px;
+    left: 35%;
+    animation: orb-glow 1s infinite alternate;
 }
 
 #week-drop {
@@ -290,19 +323,19 @@ main {
     /* padding-bottom: 10px; */
 }
 
-#week-drop > p {
+#week-drop>p {
     margin: 15px 0;
     font-family: var(--font-body);
 }
 
-.cards{
+.cards {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 40px;
 }
 
-.cards article{
+.cards article {
     flex: 1 1 260px;
     display: flex;
     overflow: hidden;
@@ -310,68 +343,63 @@ main {
     padding: 10px;
     border: 1px solid var(--color-primary);
     border-radius: var(--radius-lg);
+    transition: all 0.2s linear 0s;
 }
 
-.cards article:hover{
-    border: 1px solid var(--color-primary-glow);
-    box-shadow: 0 15px 30px var(--color-primary-glow);;
-}
-
-figcaption{
+figcaption {
     display: none;
 }
 
-figure{
+figure {
     overflow: hidden;
     object-fit: cover;
     aspect-ratio: 3/4;
     padding: 10px;
 }
 
-figure img{
+figure img {
     width: 100%;
     height: 100%;
     border-radius: var(--radius-lg);
+    transition: all 0.2s linear 0s;
 }
 
-article{
+article {
     position: relative;
 }
 
-.cards article h3{
+.cards article h3 {
     padding: 5px 10px 0;
     font-size: 1.3rem;
 }
 
-.cards article p:first-of-type{
+.cards article p:first-of-type {
     font-size: 1rem;
     padding: 0px 10px;
     font-family: var(--font-body);
 }
 
-.cards article p span{
+.cards article p span {
     color: var(--color-primary);
     font-weight: 700;
 }
 
-.cards article p:nth-of-type(2){
+.cards article p:nth-of-type(2) {
     font-family: var(--font-body);
     font-size: 1.3rem;
     font-weight: 700;
     padding: 10px 10px;
 }
 
-.cards article p:nth-of-type(2) strong{
+.cards article p:nth-of-type(2) strong {
     font-family: var(--font-display);
 }
 
-
-.cards article p:nth-of-type(2) s{
+.cards article p:nth-of-type(2) s {
     margin-left: 10px;
 }
 
-
-.cards article a{
+.cards article a {
     padding: 10px 10px;
     font-size: 1.3rem;
     color: var(--color-accent);
@@ -381,11 +409,21 @@ article{
     letter-spacing: 0.1rem;
 }
 
-.cards article a:hover{
+.cards article:hover {
+    border: 1px solid var(--color-primary-glow);
+    box-shadow: 0 15px 30px var(--color-primary-glow);
+    transform: translateY(-10px);
+}
+
+.cards article:hover > figure img{
+    transform: scale(1.08);
+}
+
+.cards article a:hover {
     color: var(--color-secondary);
 }
 
-.cards article button{
+.cards article button {
     padding: 13px 13px 13px 13px;
     font-size: 1.3rem;
     font-weight: 770;
@@ -393,43 +431,44 @@ article{
     background: rgba(231, 225, 225, 0.831);
 }
 
-.cards article button:hover{
+.cards article button:hover {
     background-color: var(--color-primary);
     text-shadow: 0 5px 10px var(--white);
     cursor: pointer;
-    
+
 }
 
-.cards article p:nth-of-type(3) mark{
+.cards article p:nth-of-type(3) mark {
     background: var(--gradient-accent);
     border-radius: var(--radius-lg);
-    padding: 7px 15px;
+    padding: 7px 10px;
     color: var(--color-text-body);
-    font-weight: 800;
+    font-weight: 700;
+    font-size: 0.8rem;
     text-transform: uppercase;
     font-family: var(--font-body);
     position: absolute;
     top: 4%;
-    left: 67%;
+    left: 64%;
 }
 
-#best-seller h2{
+#best-seller h2 {
     padding: 60px 5px 20px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 
-#best-seller table{
+#best-seller table {
     margin-bottom: 5%;
     width: 100%;
     color: var(--white);
     border-radius: var(--radius-lg);
     overflow: hidden;
     border-collapse: collapse;
-    
+
 }
 
-#best-seller th[colspan="5"]{
+#best-seller th[colspan="5"] {
     padding: 20px;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -439,7 +478,7 @@ article{
     text-align: center;
 }
 
-#best-seller th{
+#best-seller th {
     padding: 20px 15px;
     text-align: left;
     text-transform: uppercase;
@@ -448,7 +487,7 @@ article{
     background-color: #181920;
 }
 
-#best-seller td{
+#best-seller td {
     padding: 20px 15px;
     text-align: left;
     font-family: var(--font-body);
@@ -457,30 +496,30 @@ article{
     border-bottom: solid 1px var(--color-border);
 }
 
-#best-seller tr:hover td{
+#best-seller tr:hover td {
     background-color: #181920;
 }
 
-#best-seller tr td:first-of-type:hover{
+#best-seller tr td:first-of-type:hover {
     color: var(--color-secondary);
 }
 
-#why-threadco{
+#why-threadco {
     color: var(--white);
 }
 
-#why-threadco h2{
+#why-threadco h2 {
     text-transform: uppercase;
     font-family: var(--font-display);
     letter-spacing: 0.1em
 }
 
-#why-threadco p{
+#why-threadco p {
     font-family: var(--font-body);
     margin-bottom: 3%;
 }
 
-#why-threadco ul{
+#why-threadco ul {
     margin-top: 2%;
     display: flex;
     flex-wrap: wrap;
@@ -488,7 +527,7 @@ article{
     margin-bottom: 3%;
 }
 
-#why-threadco ul li{
+#why-threadco ul li {
     padding: 30px;
     flex: 1 1 240px;
     font-family: var(--font-body);
@@ -500,21 +539,21 @@ article{
     border-right: 1px solid var(--color-border);
 }
 
-#why-threadco ul li:hover{
+#why-threadco ul li:hover {
     border-left: 5px solid var(--color-secondary);
 }
 
-#why-threadco ul li span{
+#why-threadco ul li span {
     color: var(--color-text-muted);
 }
 
-#why-threadco article h3{
+#why-threadco article h3 {
     font-family: var(--font-display);
     border-bottom: solid 1px var(--color-border);
     font-size: 2rem;
 }
 
-#why-threadco article dl{
+#why-threadco article dl {
     display: flex;
     flex-wrap: wrap;
     color: var(--white);
@@ -523,11 +562,11 @@ article{
     gap: 50px;
 }
 
-#why-threadco article dl dt{
+#why-threadco article dl dt {
     color: var(--color-accent);
 }
 
-.our-promise{
+.our-promise {
     display: flex;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -535,11 +574,11 @@ article{
     font-size: 1.25rem;
 }
 
-.our-promise dd{
+.our-promise dd {
     color: var(--color-text-muted);
 }
 
-.end-section{
+.end-section {
     background: var(--color-bg-section);
     text-align: center;
     padding: 100px;
@@ -547,32 +586,32 @@ article{
     flex-direction: column;
 }
 
-.end-section h2{
+.end-section h2 {
     text-transform: uppercase;
     font-family: var(--font-display);
     margin-bottom: 15px;
 }
 
-.end-section p{
+.end-section p {
     font-family: var(--font-body);
     margin-bottom: 10px;
     max-width: 500px;
     margin: auto;
 }
 
-#notify{
+#notify {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     color: white;
 }
 
-#notify label{
-    display:none;
+#notify label {
+    display: none;
 }
 
 
-#notify input{
+#notify input {
     padding: 15px 200px 15px 15px;
     background: var(--color-surface-muted);
     color: var(--white);
@@ -583,7 +622,7 @@ article{
     border-bottom-left-radius: var(--radius-md);
 }
 
-#notify button{
+#notify button {
     padding: 15px 50px;
     background: var(--gradient-accent);
     border: solid 1px var(--color-border);
@@ -597,21 +636,22 @@ article{
     border-bottom-right-radius: var(--radius-sm);
 }
 
-#notify button:hover{ 
+#notify button:hover {
     box-shadow: 0 10px 10px var(--color-primary-glow);
     text-shadow: 0 2px 10px var(--white);
 }
 
-.end-section small{
+.end-section small {
     font-family: var(--font-body);
     font-size: 1.2rem;
 }
 
-.footer{
+.footer {
     background: var(--color-bg-footer);
     padding: 80px 80px;
 }
-.footer p:first-child{
+
+.footer p:first-child {
     font-size: 2.2rem;
     font-family: var(--font-body);
     background: var(--gradient-accent);
@@ -623,48 +663,48 @@ article{
     margin-bottom: 25px;
 }
 
-.footer p:nth-child(2){
+.footer p:nth-child(2) {
     font-family: var(--font-body);
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
 
-.footer nav ul{
+.footer nav ul {
     display: flex;
     gap: 15px;
     text-transform: uppercase;
     font-family: var(--font-body);
 }
 
-.footer nav ul li{
+.footer nav ul li {
     border: solid 1px var(--color-border);
     border-radius: var(--radius-sm);
     padding: 10px;
     margin-bottom: 20px;
 }
 
-.footer nav ul li:hover{
+.footer nav ul li:hover {
     border: 1px solid var(--white);
     background: rgba(78, 71, 71, 0.292);
 }
 
-.footer nav ul li a{
+.footer nav ul li a {
     color: var(--color-text-muted);
     font-weight: 500;
 }
 
-.footer p:last-child{
+.footer p:last-child {
     color: var(--color-accent);
     font-size: 1.2rem;
     font-family: var(--font-body);
 }
 
-.footer p:last-child a{
+.footer p:last-child a {
     color: var(--color-accent);
     font-size: 1.2rem;
     font-family: var(--font-body);
 }
 
-.footer p:last-child a:hover{
+.footer p:last-child a:hover {
     color: var(--color-secondary);
 }
