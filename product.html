@@ -23,175 +23,191 @@
     </header>
 
     <main>
-        <section>
+        <section id="catalogue">
             <h2>The Catalogue</h2>
             <p>Fresh drops, every Friday. <strong>Limited stock. No restocks.</strong> Ever.</p>
             <p>Showing <strong>8 products</strong></p>
         </section>
 
-        <section>
-            <h3>Filter By</h3>
-            <h4>Category</h4>
+        <div id="product-layout">
+            <section id="sidebar">
+                <h3>Filter By</h3>
+                <h4>Category</h4>
 
-            <ul>
-                <li>
-                    <input type="checkbox" id="tshirt">
-                    <label for="tshirt">T-Shirts</label>
-                </li>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="tshirt">
+                        <label for="tshirt">T-Shirts</label>
+                    </li>
 
-                <li>
-                    <input type="checkbox" id="hood">
-                    <label for="hood">Hoodies</label>
-                </li>
+                    <li>
+                        <input type="checkbox" id="hood">
+                        <label for="hood">Hoodies</label>
+                    </li>
 
-                <li>
-                    <input type="checkbox" id="cp">
-                    <label for="cp">Cargo Pants</label>
-                </li>
+                    <li>
+                        <input type="checkbox" id="cp">
+                        <label for="cp">Cargo Pants</label>
+                    </li>
 
-                <li>
-                    <input type="checkbox" id="caps">
-                    <label for="caps">Caps</label>
-                </li>
+                    <li>
+                        <input type="checkbox" id="caps">
+                        <label for="caps">Caps</label>
+                    </li>
 
-                <li>
-                    <input type="checkbox" id="acc">
-                    <label for="acc">Accessories</label>
-                </li>
-            </ul>
+                    <li>
+                        <input type="checkbox" id="acc">
+                        <label for="acc">Accessories</label>
+                    </li>
+                </ul>
 
-            <h4>Price Range (&#8377;)</h4>
+                <h4>Price Range (&#8377;)</h4>
 
-            <label for="min">Min</label>
-            <input type="number" placeholder="0" min="0">
-            <br><br>
+                <label for="min">Min : </label>
+                <input type="number" placeholder="0" min="0">
+                <br><br>
 
-            <label for="max">Max</label>
-            <input type="number" placeholder="50000" max="50000">
+                <label for="max">Max : </label>
+                <input type="number" placeholder="50000" max="50000">
 
-            <h4>Sort By</h4>
-            <select name="sort" id="sort">
-                <option value="">Most Popular</option>
-                <option value="">Price: Low to High</option>
-                <option value="">Price: High to Low</option>
-                <option value="">Newest First</option>
-            </select>
-            <br><br>
-            <button type="submit">Apply Filters</button>
-            <button type="reset">Reset</button>
-        </section>
+                <h4>Sort By</h4>
+                <select name="sort" id="sort">
+                    <option value="">Most Popular</option>
+                    <option value="">Price: Low to High</option>
+                    <option value="">Price: High to Low</option>
+                    <option value="">Newest First</option>
+                </select>
+                <br><br>
+                <button type="submit">Apply Filters</button>
+                <button type="clear" id="clear-all">Clear All</button>
+            </section>
 
-        <section>
-            <article>
+            <section id="products">
                 <h2>All Products</h2>
 
-                <!-- Product 1 -->
-                <figure>
-                    <img src="product 1.jpg" alt="" width="300px" height="500px">
-                    <figcaption>Oversized Drop Tee Vol.3</figcaption>
-                </figure>
-                <h3>Oversized Drop Tee Vol.3</h3>
-                <p>Category: T-Shirts</p>
-                <p>Price: <strong>&#8377;799</strong> <s>&#8377;1199</s></p>
-                <p><mark>33% OFF</mark></p>
-                <h4><strong>In Stock</strong></h4>
-                <a href="">View Details</a>
-                <button type="submit">Add to Cart</button>
+                <div class="grid">
+                    <article>
+                        <!-- Product 1 -->
+                        <figure>
+                            <img src="product 1.jpg" alt="" width="300px" height="500px">
+                            <figcaption>Oversized Drop Tee Vol.3</figcaption>
+                        </figure>
+                        <h3>Oversized Drop Tee Vol.3</h3>
+                        <p>Category: T-Shirts</p>
+                        <p>Price: <strong>&#8377;799</strong> <s>&#8377;1199</s></p>
+                        <p><mark>33% OFF</mark></p>
+                        <h4><strong>In Stock</strong></h4>
+                        <a href="">View Details</a>
+                        <button type="submit">Add to Cart</button>
+                    </article>
 
-                <!-- Product 2 -->
-                <figure>
-                    <img src="product 2.jpg" alt="" width="300px" height="500px">
-                    <figcaption>Street Hoddie - Olive</figcaption>
-                </figure>
-                <h3>Street Hoddie - Olive</h3>
-                <p>Category: Hoddies</p>
-                <p>Price: <strong>&#8377;1499</strong> <s>&#8377;1999</s></p>
-                <p><mark>25% OFF</mark></p>
-                <h4><strong>In Stock</strong></h4>
-                <a href="">View Details</a>
-                <button type="submit">Add to Cart</button>
+                    <article>
+                        <!-- Product 2 -->
+                        <figure>
+                            <img src="product 2.jpg" alt="" width="300px" height="500px">
+                            <figcaption>Street Hoddie - Olive</figcaption>
+                        </figure>
+                        <h3>Street Hoddie - Olive</h3>
+                        <p>Category: Hoddies</p>
+                        <p>Price: <strong>&#8377;1499</strong> <s>&#8377;1999</s></p>
+                        <p><mark>25% OFF</mark></p>
+                        <h4><strong>In Stock</strong></h4>
+                        <a href="">View Details</a>
+                        <button type="submit">Add to Cart</button>
+                    </article>
 
-                <!-- Product 3 -->
-                <figure>
-                    <img src="product 3.jpg" alt="" width="300px" height="500px">
-                    <figcaption>Utility Cargo - Beige</figcaption>
-                </figure>
-                <h3>Utility Cargo - Beige</h3>
-                <p>Category: Cargo Pants</p>
-                <p>Price: <strong>&#8377;1799</strong> <s>&#8377;2499</s></p>
-                <p><mark>28% OFF</mark></p>
-                <h4><strong>In Stock</strong></h4>
-                <a href="">View Details</a>
-                <button type="submit">Add to Cart</button>
+                    <article>
+                        <!-- Product 3 -->
+                        <figure>
+                            <img src="product 3.jpg" alt="" width="300px" height="500px">
+                            <figcaption>Utility Cargo - Beige</figcaption>
+                        </figure>
+                        <h3>Utility Cargo - Beige</h3>
+                        <p>Category: Cargo Pants</p>
+                        <p>Price: <strong>&#8377;1799</strong> <s>&#8377;2499</s></p>
+                        <p><mark>28% OFF</mark></p>
+                        <h4><strong>In Stock</strong></h4>
+                        <a href="">View Details</a>
+                        <button type="submit">Add to Cart</button>
+                    </article>
 
-                <!-- Product 4 -->
-                <figure>
-                    <img src="product 4.jpg" alt="" width="400px" height="500px">
-                    <figcaption>TC 6 - Panel Cap</figcaption>
-                </figure>
-                <h3>TC 6 - Panel Cap</h3>
-                <p>Category: Caps</p>
-                <p>Price: <strong>&#8377;499</strong> <s>&#8377;699</s></p>
-                <p><mark>28% OFF</mark></p>
-                <h4><strong>In Stock</strong></h4>
-                <a href="">View Details</a>
-                <button type="submit">Add to Cart</button>
+                    <article>
+                        <!-- Product 4 -->
+                        <figure>
+                            <img src="product 4.jpg" alt="" width="400px" height="500px">
+                            <figcaption>TC 6 - Panel Cap</figcaption>
+                        </figure>
+                        <h3>TC 6 - Panel Cap</h3>
+                        <p>Category: Caps</p>
+                        <p>Price: <strong>&#8377;499</strong> <s>&#8377;699</s></p>
+                        <p><mark>28% OFF</mark></p>
+                        <h4><strong>In Stock</strong></h4>
+                        <a href="">View Details</a>
+                        <button type="submit">Add to Cart</button>
+                    </article>
 
-                <!-- Product 5 -->
-                <figure>
-                    <img src="product 1.jpg" alt="" width="300px" height="500px">
-                    <figcaption>Monogram Tote Bag - Cream</figcaption>
-                </figure>
-                <h3>Monogram Tote Bag - Cream</h3>
-                <p>Category: Accessories</p>
-                <p>Price: <strong>&#8377;349</strong> <s>&#8377;499</s></p>
-                <p><mark>30% OFF</mark></p>
-                <h4><strong>In Stock</strong></h4>
-                <a href="">View Details</a>
-                <button type="submit">Add to Cart</button>
+                    <article>
+                        <!-- Product 5 -->
+                        <figure>
+                            <img src="product 1.jpg" alt="" width="300px" height="500px">
+                            <figcaption>Monogram Tote Bag - Cream</figcaption>
+                        </figure>
+                        <h3>Monogram Tote Bag - Cream</h3>
+                        <p>Category: Accessories</p>
+                        <p>Price: <strong>&#8377;349</strong> <s>&#8377;499</s></p>
+                        <p><mark>30% OFF</mark></p>
+                        <h4><strong>In Stock</strong></h4>
+                        <a href="">View Details</a>
+                        <button type="submit">Add to Cart</button>
+                    </article>
 
-                <!-- Product 6 -->
-                <figure>
-                    <img src="product 2.jpg" alt="" width="300px" height="500px">
-                    <figcaption>Acid Wash Tee - White</figcaption>
-                </figure>
-                <h3>Acid Wash Tee - White</h3>
-                <p>Category: T-Shirts</p>
-                <p>Price: <strong>&#8377;899</strong> <s>&#8377;1299</s></p>
-                <p><mark>30% OFF</mark></p>
-                <p><s>Out of Stock</s></p>
-                <a href="">View Details</a>
-                <button disabled>Sold Out</button>
+                    <article>
+                        <!-- Product 6 -->
+                        <figure>
+                            <img src="product 2.jpg" alt="" width="300px" height="500px">
+                            <figcaption>Acid Wash Tee - White</figcaption>
+                        </figure>
+                        <h3>Acid Wash Tee - White</h3>
+                        <p>Category: T-Shirts</p>
+                        <p>Price: <strong>&#8377;899</strong> <s>&#8377;1299</s></p>
+                        <p><mark>30% OFF</mark></p>
+                        <p><s>Out of Stock</s></p>
+                        <a href="">View Details</a>
+                        <button disabled>Sold Out</button>
+                    </article>
 
-                <!-- Product 7 -->
-                <figure>
-                    <img src="product 3.jpg" alt="" width="300px" height="500px">
-                    <figcaption>Zip-Up Hoodie - Charcoal</figcaption>
-                </figure>
-                <h3>Zip-Up Hoodie - Charcoal</h3>
-                <p>Category: Hoodies</p>
-                <p>Price: <strong>&#8377;1699</strong> <s>&#8377;2199</s></p>
-                <p><mark>22% OFF</mark></p>
-                <p><strong>In Stock</strong></p>
-                <a href="">View Details</a>
-                <button type="submit">Add to Cart</button>
+                    <article>
+                        <!-- Product 7 -->
+                        <figure>
+                            <img src="product 3.jpg" alt="" width="300px" height="500px">
+                            <figcaption>Zip-Up Hoodie - Charcoal</figcaption>
+                        </figure>
+                        <h3>Zip-Up Hoodie - Charcoal</h3>
+                        <p>Category: Hoodies</p>
+                        <p>Price: <strong>&#8377;1699</strong> <s>&#8377;2199</s></p>
+                        <p><mark>22% OFF</mark></p>
+                        <p><strong>In Stock</strong></p>
+                        <a href="">View Details</a>
+                        <button type="submit">Add to Cart</button>
+                    </article>
 
-                <!-- Product 8 -->
-                <figure>
-                    <img src="product 4.jpg" alt="" width="400px" height="500px">
-                    <figcaption>Street Cargo - Olive</figcaption>
-                </figure>
-                <h3>Street Cargo - Olive</h3>
-                <p>Cargo Pants</p>
-                <p>Price: <strong>&#8377;1999</strong> <s>&#8377;2699</s></p>
-                <p><mark>25% OFF</mark></p>
-                <p><strong>In Stock</strong></p>
-                <a href="">View Details</a>
-                <button type="submit">Add to Cart</button>
-
-            </article>
-        </section>
-
+                    <article>
+                        <!-- Product 8 -->
+                        <figure>
+                            <img src="product 4.jpg" alt="" width="400px" height="500px">
+                            <figcaption>Street Cargo - Olive</figcaption>
+                        </figure>
+                        <h3>Street Cargo - Olive</h3>
+                        <p>Cargo Pants</p>
+                        <p>Price: <strong>&#8377;1999</strong> <s>&#8377;2699</s></p>
+                        <p><mark>25% OFF</mark></p>
+                        <p><strong>In Stock</strong></p>
+                        <a href="">View Details</a>
+                        <button type="submit">Add to Cart</button>
+                    </article>
+                </div>
+            </section>
+        </div>
         <section>
             <h2>Compare Our Bestsellers</h2>
             <p>Not sure which to pick? Here is a side by side breakdown.</p>
