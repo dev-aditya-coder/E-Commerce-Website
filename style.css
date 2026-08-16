@@ -335,7 +335,7 @@ main {
     margin-top: 40px;
 }
 
-.cards article {
+article {
     flex: 1 1 260px;
     display: flex;
     overflow: hidden;
@@ -452,13 +452,13 @@ article p:nth-of-type(3) mark {
     left: 64%;
 }
 
-#best-seller h2 {
+.best-seller h2 {
     padding: 60px 5px 20px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 
-#best-seller table {
+.best-seller table {
     margin-bottom: 5%;
     width: 100%;
     color: var(--white);
@@ -468,7 +468,7 @@ article p:nth-of-type(3) mark {
 
 }
 
-#best-seller th[colspan="5"] {
+.best-seller th[colspan="5"] {
     padding: 20px;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -478,7 +478,7 @@ article p:nth-of-type(3) mark {
     text-align: center;
 }
 
-#best-seller th {
+.best-seller th {
     padding: 20px 15px;
     text-align: left;
     text-transform: uppercase;
@@ -487,7 +487,7 @@ article p:nth-of-type(3) mark {
     background-color: #181920;
 }
 
-#best-seller td {
+.best-seller td {
     padding: 20px 15px;
     text-align: left;
     font-family: var(--font-body);
@@ -496,11 +496,11 @@ article p:nth-of-type(3) mark {
     border-bottom: solid 1px var(--color-border);
 }
 
-#best-seller tr:hover td {
+tr:hover td {
     background-color: #181920;
 }
 
-#best-seller tr td:first-of-type:hover {
+#best-seller-month tr td:first-of-type:hover {
     color: var(--color-secondary);
 }
 
@@ -736,7 +736,7 @@ article p:nth-of-type(3) mark {
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 20px;
 }
 
@@ -837,4 +837,54 @@ article p:nth-of-type(3) mark {
     background-color: transparent;
     color: var(--color-text-muted);
     border: 2px solid var(--color-border);
+}
+
+#products h2{
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    padding-bottom: 20px;
+    font-family: var(--font-body);
+    letter-spacing: 2px;
+}
+
+.grid article figure{
+    aspect-ratio: 4/4;
+}
+
+.grid article h4{
+    padding-left: 10px;
+}
+
+.grid article p:nth-of-type(3){
+    padding: 10px;
+}
+
+.comparison p{
+    font-family: var(--font-body);
+    padding-bottom: 10px;
+}
+
+.comparison tr:nth-of-type(1) th{
+    text-align: center;
+    color: var(--color-text-muted);
+    background-color: black;
+}
+
+.comparison tr{
+    text-align: left;
+}
+
+.comparison th{
+    border: 2px solid black;
+}
+
+.comparison table tr:nth-of-type(n+5) th,
+.comparison table tr:nth-of-type(3) th {
+    color: var(--color-accent);
+}
+
+#products article:nth-of-type(6) button:hover{
+    background-color: rgba(66, 64, 64, 0.926);
+    border: none;
+    text-shadow: none;
 }
