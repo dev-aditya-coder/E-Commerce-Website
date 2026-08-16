@@ -571,7 +571,14 @@ tr:hover td {
     margin-top: 20px;
     margin-bottom: 50px;
     gap: 50px;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
+    color: var(--color-accent);
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.our-promise dt{
+    margin-bottom: 10px;
 }
 
 .our-promise dd {
