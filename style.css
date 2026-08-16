@@ -368,38 +368,38 @@ article {
     position: relative;
 }
 
-.cards article h3 {
+article h3 {
     padding: 5px 10px 0;
     font-size: 1.3rem;
 }
 
-.cards article p:first-of-type {
+article p:first-of-type {
     font-size: 1rem;
     padding: 0px 10px;
     font-family: var(--font-body);
 }
 
-.cards article p span {
+article p span {
     color: var(--color-primary);
     font-weight: 700;
 }
 
-.cards article p:nth-of-type(2) {
+article p:nth-of-type(2) {
     font-family: var(--font-body);
     font-size: 1.3rem;
     font-weight: 700;
     padding: 10px 10px;
 }
 
-.cards article p:nth-of-type(2) strong {
+article p:nth-of-type(2) strong {
     font-family: var(--font-display);
 }
 
-.cards article p:nth-of-type(2) s {
+article p:nth-of-type(2) s {
     margin-left: 10px;
 }
 
-.cards article a {
+article a {
     padding: 10px 10px;
     font-size: 1.3rem;
     color: var(--color-accent);
@@ -409,21 +409,21 @@ article {
     letter-spacing: 0.1rem;
 }
 
-.cards article:hover {
+article:hover {
     border: 1px solid var(--color-primary-glow);
     box-shadow: 0 15px 30px var(--color-primary-glow);
     transform: translateY(-10px);
 }
 
-.cards article:hover > figure img{
+article:hover > figure img{
     transform: scale(1.08);
 }
 
-.cards article a:hover {
+article a:hover {
     color: var(--color-secondary);
 }
 
-.cards article button {
+article button {
     padding: 13px 13px 13px 13px;
     font-size: 1.3rem;
     font-weight: 770;
@@ -431,14 +431,14 @@ article {
     background: rgba(231, 225, 225, 0.831);
 }
 
-.cards article button:hover {
+article button:hover {
     background-color: var(--color-primary);
     text-shadow: 0 5px 10px var(--white);
     cursor: pointer;
 
 }
 
-.cards article p:nth-of-type(3) mark {
+article p:nth-of-type(3) mark {
     background: var(--gradient-accent);
     border-radius: var(--radius-lg);
     padding: 7px 10px;
