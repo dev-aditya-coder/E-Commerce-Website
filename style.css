@@ -924,6 +924,173 @@ tr:hover td {
     text-shadow: none;
 }
 
+#heading{
+    font-family: var(--font-body);
+    color: var(--color-text-muted);
+    margin-bottom: 50px;
+}
+
+#heading a{
+    color: var(--color-primary);
+}
+
+.product-details{
+    display: flex;
+    gap: 50px;
+}
+
+#product-lhero{
+    display: flex;
+    flex-direction: column;
+    height: 125vh;
+    width: 110vw;
+}
+
+#product-rhero h2{
+    text-transform: uppercase;
+    font-family: var(--font-display);
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+#product-rhero p:nth-of-type(1){
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 50px;
+}
+
+#product-rhero p:nth-of-type(2){
+    font-size: 3rem;
+    font-family: var(--font-display);
+    letter-spacing: 2px;
+    display: inline;
+}
+
+#product-rhero p:nth-of-type(2) s{
+    font-size: 1.5rem;
+}
+
+#product-rhero mark{
+    background: var(--gradient-accent);
+    border-radius: var(--radius-lg);
+    padding: 7px 15px;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-family: var(--font-body);
+}
+
+#product-rhero small{
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+#product-rhero label{
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: var(--font-body);
+    letter-spacing: 2px;
+}
+
+#product-rhero label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#size{
+    width: 40%;
+    padding: 10px 20px;
+    color: var(--white);
+    background-color: var(--color-surface);
+    font-size: 1rem;
+    border-radius: var(--radius-sm);
+    outline: none;
+}
+#size:focus{
+    border-color: var(--color-primary);
+}
+
+#product-rhero a{
+    color: var(--color-accent);
+    font-family: var(--font-body);
+    margin-left: 10px;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+#product-rhero label:nth-of-type(2){
+    margin-top: 20px;
+}
+
+#product-rhero input{
+    padding: 10px;
+    width: 30%;
+    background-color: var(--color-surface);
+    border-radius: var(--radius-sm);
+    color: white;
+    outline: none;
+    border: 2px solid var(--color-border);
+    margin-bottom: 20px;
+}
+
+#product-rhero input[type="number"]:focus{
+    border-color: var(--color-primary);
+}
+
+#product-rhero button:nth-of-type(1){
+    width: 50%;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-family: var(--font-display);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 600;
+    background: var(--gradient-accent);
+    border-radius: var(--radius-sm);
+    border: none;
+}
+
+#product-rhero button:nth-of-type(2){
+    width: 40%;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--white);
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-display);
+    text-transform: uppercase;
+}
+
+#product-rhero button:nth-of-type(1):hover{
+    background-color: var(--color-primary);
+    text-shadow: 0 2px 10px var(--white);
+}
+
+#product-rhero button:nth-of-type(2):hover{
+    background: var(--white);
+    color: black;
+}
+
+#product-rhero ul{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: var(--color-text-muted);
+    border-left: 4px solid var(--color-accent);
+    border-top: 2px solid var(--color-border);
+    border-right: 2px solid var(--color-border);
+    border-bottom: 2px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-family: var(--font-body);
+    width: 92%;
+}
+
 @media (max-width: 1200px) {
     header {
         left: 0px;
