@@ -1258,6 +1258,269 @@ tr:hover td {
     margin-bottom: 20px;
 }
 
+#get-in-touch{
+    padding: 50px;
+}
+
+#get-in-touch h2{
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: var(--font-display);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#get-in-touch p{
+    font-family: var(--font-body);
+}
+
+.msg h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--font-display);
+    margin-bottom: 30px;
+}
+
+.our-details{
+    background-color: var(--color-surface);
+    display: flex;
+}
+
+.msg{
+    flex: 1;
+    padding: 50px;
+}
+
+.our{
+    flex: 0 0 400px;
+}
+
+#check{
+    font-size: 0.85rem;
+    letter-spacing: none;
+    text-transform: capitalize;
+}
+
+.consent{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.consent span{
+    font-size: 0.8rem;
+}
+
+.consent a{
+    color: var(--color-primary);
+}
+
+.msg fieldset{
+    background-color: var(--color-surface);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.msg fieldset legend{
+    color: var(--color-primary);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--font-display);
+    letter-spacing: 2px;
+}
+
+.msg fieldset input{
+    width: 100%;
+    background-color: #171822;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 15px;
+    color: white;
+    margin-top: 10px;
+}
+
+.msg fieldset input[type="checkbox"] {
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.msg fieldset label{
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.msg fieldset small{
+    font-family: var(--font-body);
+
+}
+
+.msg form:nth-of-type(2) fieldset select{
+    width: 100%;
+    background-color: var(--color-surface-muted);
+    padding: 10px;
+    border-radius: var(--radius-sm);
+    color: white;
+    margin-top: 10px;
+}
+
+.msg form:nth-of-type(2) fieldset textarea{
+    width: 100%;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-surface-muted);
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.msg button:nth-of-type(1){
+    background: var(--gradient-accent);
+    padding: 10px 50px;
+    border-radius: var(--radius-sm);
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.msg button:nth-of-type(2){
+    background: transparent;
+    padding: 10px 50px;
+    border-radius: var(--radius-sm);
+    border: 2px solid var(--color-border);
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.our-details{
+    padding: 30px
+}
+
+.our-details h2{
+    text-transform: uppercase;
+    font-family: var(--font-display);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.our-details address{
+    border-left: 3px solid var(--color-primary);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    border-right: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.our-details address strong{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--font-body);
+}
+
+.our-details address div{
+    color: var(--color-text-muted);
+    margin-top: 30px;
+}
+
+.our-details address a{
+    font-family: var(--font-body);
+    color: var(--color-accent);
+    text-decoration: underline;
+} 
+
+.our-details h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.our table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color-surface);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.our th,
+.our td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.our th {
+    background-color: #171822;
+    color: white;
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.our td {
+    background-color: var(--color-surface-muted);
+    color: var(--white);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+}
+
+.our tr:last-child td {
+    border-bottom: none;
+}
+
+.our ul li{
+    border: 2px solid var(--color-border);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: var(--radius-md);
+    background-color: var(--color-surface-muted);
+}
+
+.our ul li a{
+    color: var(--color-accent);
+    font-family: var(--font-body);
+}
+
+.common-queries{
+    padding: 70px 30px;
+    color: white;
+}
+
+.common-queries h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.common-queries p{
+    font-family: var(--font-body);
+    margin-bottom: 20px;
+}
+
+.common-queries details{
+    font-family: var(--font-body);
+    border-top: 1px solid var(--color-border);
+    padding: 30px;
+}
+
+.common-queries details:last-of-type{
+    border-bottom: 1px solid var(--color-border);
+}
+
+
 @media (max-width: 1200px) {
     header {
         left: 0px;
